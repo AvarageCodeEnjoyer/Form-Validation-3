@@ -11,17 +11,18 @@
 <body>
   <div class="container">
 		<form>
-			<span id="inputFail"></span>
 			<fieldset> 
-				<legend>Name</legend> 
+				<legend>Information</legend> 
 				<div>
-					<label for="name">Name</label>
+					<label for="name">Name</label>  <!-- Remove the pattern and "required" attributes on all inputs to use the checkInput function. Otherwise the form wont let you submit to begin with -->
 					<input type="text" id="name" placeholder="First & Last Name" pattern="^[a-zA-Z]{2,15}\s[a-zA-Z]{2,15}" required>
 				</div>
+				<span></span>
 				<div>
 					<label for="email">Email</label>
-					<input type="email" id="email" placeholder="Example123@gmail.com" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,}" required>
+					<input type="email" id="email" placeholder="Example123@gmail.com" pattern="^[\w.-]+@([\w-]+\.)+[\w-]{2,}$" required>
 				</div>
+				<span></span>
         <div id="message">
 					<label for="message">Message</label>
           <textarea name="message" id="message" cols="30" rows="10" pattern="^\w+" required></textarea>
