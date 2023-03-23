@@ -16,15 +16,15 @@
 				<legend>Name</legend> 
 				<div>
 					<label for="name">Name</label>
-					<input type="text" id="name" placeholder="First & Last Name">
+					<input type="text" id="name" placeholder="First & Last Name" pattern="^[a-zA-Z]{2,15}\s[a-zA-Z]{2,15}" required>
 				</div>
 				<div>
 					<label for="email">Email</label>
-					<input type="email" id="email" placeholder="Example123@gmail.com">
+					<input type="email" id="email" placeholder="Example123@gmail.com" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,}" required>
 				</div>
         <div id="message">
 					<label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" pattern="^\w+" required></textarea>
         </div>
 			</fieldset>
       <input type="submit" value="Submit Form">
@@ -32,3 +32,4 @@
   </div>
 </body>
 </html>
+

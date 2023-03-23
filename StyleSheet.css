@@ -41,21 +41,10 @@ fieldset > div {
   border-radius: 5px;
 }
 
-select {
-  flex: 0.55
-}
-
 span {
   font-size: 10px;
   color: red;
   align-self: center;
-}
-
-#cardType {
-  display: flex;
-  justify-content: space-evenly;
-  flex: 1;
-  margin: 0px;
 }
 
 #submit {
@@ -69,7 +58,8 @@ span {
 
 #message {
   flex-direction: column;
-  resize: vertical;
+  resize: none;
+  /* height: 100px; */
 }
 
 input[type="submit"] {
