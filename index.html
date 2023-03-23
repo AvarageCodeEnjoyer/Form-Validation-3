@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./StyleSheet.css" rel="StyleSheet">
+  <script defer src="./app.js"></script>
+  <title>3 Form Input Validation</title>
+</head>
+<body>
+  <div class="container">
+		<form>
+			<span id="inputFail"></span>
+			<fieldset> 
+				<legend>Name</legend> 
+				<div>
+					<label for="name">Name</label>
+					<input type="text" id="name" placeholder="First & Last Name">
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="email" id="email" placeholder="Example123@gmail.com">
+				</div>
+        <div id="message">
+					<label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+			</fieldset>
+      <input type="submit" value="Submit Form">
+    </form>
+  </div>
+</body>
+</html>
